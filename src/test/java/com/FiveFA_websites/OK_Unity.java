@@ -8,6 +8,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class OK_Unity {
 
     public void unity() throws InterruptedException{
+        WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         System.out.println("----------------------------------------");
         //sitye gidiş
@@ -15,7 +16,7 @@ public class OK_Unity {
 
             System.out.println("----------------------------------------");
             //sitye gidiş
-            driver.get("https://id.unity.com/en/conversations/73c0545c-970e-423f-bd0d-24539d19891c01bf");
+            driver.get("https://id.unity.com/en/conversations/5a38f41e-255f-4294-b902-b2303b82739c008f");
             driver.manage().window().maximize();
 
             driver.findElement(By.id("conversations_create_session_form_email")).sendKeys(Objects2.eMail);

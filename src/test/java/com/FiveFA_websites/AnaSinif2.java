@@ -21,7 +21,7 @@ public class AnaSinif2 {
         OK_Unity unity = new OK_Unity();
 
 
-new deneme2().deneme();
+//new deneme2().deneme();
 
  //       mongo.mongo();
 //          redis.redis();
@@ -38,7 +38,7 @@ new deneme2().deneme();
 //        gocardless.gocardless();
 //        coinbase.coinbase();
  //       Gate2.gate();//captcha var yarım çalışıyor
-//        unity.unity();
+       unity.unity();
 
 
 
