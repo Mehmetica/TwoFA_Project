@@ -11,7 +11,11 @@ public class OK_YouHolder {
         driver.get("https://app.youhodler.com/sign-in");
         driver.manage().window().maximize();
         driver.findElement(By.xpath("//input[@data-testid='EMAIL_INPUT']")).sendKeys("m.gzr.160588@gmail.com");
+        Thread.sleep(1500);
+
         driver.findElement(By.xpath("//input[@data-testid='PASSWORD_INPUT']")).sendKeys("Besiktas01!");
+        Thread.sleep(1500);
+
         driver.findElement(By.xpath("//div[@data-testid='SIGN_IN_BUTTON']")).click();
 
 

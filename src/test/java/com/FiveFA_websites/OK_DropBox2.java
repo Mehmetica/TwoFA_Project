@@ -18,13 +18,13 @@ public class OK_DropBox2 {
         Thread.sleep(500);
 
         driver.findElement(By.xpath("//input[@class='text-input-input']")).click();
-        Thread.sleep(500);
+        Thread.sleep(1500);
 
 
         driver.findElement(By.xpath("//input[@name='login_email']")).sendKeys(Objects2.eMail);
-
+        Thread.sleep(500);
         driver.findElement(By.xpath("//input[@name='login_password']")).sendKeys(Objects2.password);
-
+        Thread.sleep(500);
         driver.findElement(By.xpath("//button[@class='login-button signin-button button-primary' or " +
                 "@class='login-button--dwg-refresh dwg-button2 dwg-button2--button-style-primary dwg-box dwg-display--inline-flex" +
                 " dwg-position--relative dwg-pt--2 dwg-pr--3 dwg-pb--2 dwg-pl--3 dwg-bg-color--core-accent disabled:dwg-bg-color--disabled" +

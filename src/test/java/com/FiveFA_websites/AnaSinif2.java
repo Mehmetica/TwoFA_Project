@@ -1,5 +1,7 @@
 package com.FiveFA_websites;
 
+import com.websites.AnaSinif1;
+
 public class AnaSinif2 {
 
     public static void main(String[] args) throws InterruptedException {
@@ -16,30 +18,34 @@ public class AnaSinif2 {
         OK_PCloud2 pCloud = new OK_PCloud2();
         OK_YouHolder2 youHolder = new OK_YouHolder2();
         OK_Redis redis = new OK_Redis();
-        OK_Mongo mongo = new OK_Mongo();
-        Gate2 Gate2 = new Gate2();
+        Half_Mongo mongo = new Half_Mongo();
+        Half_Gate2 Half_Gate2 = new Half_Gate2();
         OK_Unity unity = new OK_Unity();
 
 
-//new deneme2().deneme();
+        for (int i = 0; i < 5; i++) {
+            redis.redis();
+            dropBox.dropbox();
+            youHolder.youholder();
+            kaspersky.kaspersky();
+            monday.monday();
+            pCloud.pcloud();
+            elastic.elastic();
+            cex.cex();
+            bitly.bitly();
+            arena.arena();
+            expo.expo();
+            gocardless.gocardless();
+            unity.unity();
+        }
 
- //       mongo.mongo();
-//          redis.redis();
-//        dropBox.dropbox();
-//        youHolder.youholder();
-//        kaspersky.kaspersky();
-//        monday.monday();
-//        pCloud.pcloud();
-//        elastic.elastic();
-//        cex.cex();
-//        bitly.bitly();
-//        arena.arena();
-//        expo.expo();
-//        gocardless.gocardless();
-//        coinbase.coinbase();
- //       Gate2.gate();//captcha var yarım çalışıyor
-       unity.unity();
+        for (int i = 0; i < 2; i++) {
+            new AnaSinif1().anaSinif1();
+        }
 
+        coinbase.coinbase();//sık sık hata veriyor.yavaş site
+        Half_Gate2.gate();//captcha var yarım çalışıyor
+        mongo.mongo();//send e basmıyor
 
 
     }

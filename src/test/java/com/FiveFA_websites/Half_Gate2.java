@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Gate2 {
+public class Half_Gate2 {
 
     public static void main(String[] args) throws InterruptedException {
 
@@ -33,8 +33,7 @@ public class Gate2 {
         Thread.sleep(3000);
 
 
-        driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border']")).click();
-        driver.findElement(By.xpath("//div[@class='recaptcha-checkbox-border']")).click();
+
 
 
 

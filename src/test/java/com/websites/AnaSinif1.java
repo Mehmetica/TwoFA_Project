@@ -1,8 +1,13 @@
 package com.websites;
 
-public class AnaSinif {
+public class AnaSinif1 {
 
     public static void main(String[] args) throws InterruptedException {
+
+        new AnaSinif1().anaSinif1();
+
+
+    }public void anaSinif1() throws InterruptedException {
         OK_Arena arena = new OK_Arena();
         OK_Bitly bitly = new OK_Bitly();
         OK_Cex cex = new OK_Cex();
@@ -38,6 +43,5 @@ public class AnaSinif {
         textlocal.textlocal();
         gocardless.gocardless();
         coinbase.coinbase();
-
     }
 }

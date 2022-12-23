@@ -17,12 +17,16 @@ public class OK_Wazirx {
 
 
         driver.findElement(By.xpath("//input[@placeholder='Enter your email']")).click();
+        Thread.sleep(1500);
 
         driver.findElement(By.xpath("//input[@placeholder='Enter your email']")).sendKeys(Objects.eMail);
         Thread.sleep(500);
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).click();
+        Thread.sleep(1500);
 
         driver.findElement(By.xpath("//input[@placeholder='Enter your password']")).sendKeys(Objects.password);
+        Thread.sleep(1500);
+
         driver.findElement(By.xpath("//span[text()='Login']")).click();
 
 

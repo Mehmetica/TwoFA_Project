@@ -4,6 +4,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.w3c.dom.Text;
 
 public class OK_Unity {
 
@@ -16,8 +17,13 @@ public class OK_Unity {
 
             System.out.println("----------------------------------------");
             //sitye gidiş
-            driver.get("https://id.unity.com/en/conversations/5a38f41e-255f-4294-b902-b2303b82739c008f");
+            driver.get("https://unity.com/");
             driver.manage().window().maximize();
+
+            driver.findElement(By.xpath("(//span[@class='component-icon component-button__icon--is-standalone'])[3]")).click();
+            Thread.sleep(1500);
+
+            driver.findElement(By.xpath("(//li[@class='component-menu-item'])[8]") ).click();
 
             driver.findElement(By.id("conversations_create_session_form_email")).sendKeys(Objects2.eMail);
             Thread.sleep(1000);

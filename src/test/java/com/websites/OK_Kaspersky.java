@@ -27,13 +27,16 @@ public class OK_Kaspersky {
 
        try{
         driver.findElement(By.xpath("//input[@data-at-selector='emailInput']")).click();
-        Thread.sleep(1000);
+           Thread.sleep(1500);
 
-        driver.findElement(By.xpath("//input[@data-at-selector='emailInput']")).sendKeys(Objects.eMail);
-        Thread.sleep(1000);
+
+           driver.findElement(By.xpath("//input[@data-at-selector='emailInput']")).sendKeys(Objects.eMail);
+        Thread.sleep(1500);
         driver.findElement(By.xpath("//input[@data-at-selector='passwordInput']")).click();
+           Thread.sleep(1500);
 
         driver.findElement(By.xpath("//input[@data-at-selector='passwordInput']")).sendKeys(Objects.password);
+           Thread.sleep(1500);
 
         driver.findElement(By.xpath("//kl-button[@ atselector='welcomeSignInBtn']")).click();}catch (RuntimeException e){
            System.out.println(getClass().getSimpleName()+" hata verdi :"+e);

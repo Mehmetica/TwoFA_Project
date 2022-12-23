@@ -5,11 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class OK_Mongo {
+public class Half_Mongo {
 
-    public static void main(String[] args) throws InterruptedException {
-
-    } public void mongo() throws InterruptedException{
+   public void mongo() throws InterruptedException{
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         System.out.println("----------------------------------------");
@@ -26,10 +24,9 @@ public class OK_Mongo {
         Thread.sleep(1000);
 
         driver.findElement(By.name("login")).click();
-        Thread.sleep(1000);
-
-        driver.findElement(By.name("send" )).click();
-
+        Thread.sleep(3000);
+        //driver.findElement(By.name("send")).click();
+        driver.findElement(By.cssSelector("button[class*='leafygreen']")).click();
 
 
 
