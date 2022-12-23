@@ -16,8 +16,15 @@ public class AnaSinif2 {
         OK_PCloud2 pCloud = new OK_PCloud2();
         OK_YouHolder2 youHolder = new OK_YouHolder2();
         OK_Redis redis = new OK_Redis();
+        OK_Mongo mongo = new OK_Mongo();
+        Gate2 Gate2 = new Gate2();
+        OK_Unity unity = new OK_Unity();
 
-          redis.redis();
+
+new deneme2().deneme();
+
+ //       mongo.mongo();
+//          redis.redis();
 //        dropBox.dropbox();
 //        youHolder.youholder();
 //        kaspersky.kaspersky();
@@ -30,6 +37,10 @@ public class AnaSinif2 {
 //        expo.expo();
 //        gocardless.gocardless();
 //        coinbase.coinbase();
+ //       Gate2.gate();//captcha var yarım çalışıyor
+//        unity.unity();
+
+
 
     }
 }
