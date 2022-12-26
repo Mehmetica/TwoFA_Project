@@ -25,7 +25,7 @@ public class OK_PCloud2 {
 
 //input[@placeholder='Şifre']
 
-
+        driver.close();
     }
 }
 

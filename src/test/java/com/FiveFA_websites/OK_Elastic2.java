@@ -26,7 +26,7 @@ public class OK_Elastic2 {
         driver.findElement(By.xpath("//span[text()='Log in']")).click();
 
 
-
+        driver.close();
 
 
     }

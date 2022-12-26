@@ -1,12 +1,11 @@
 package com.FiveFA_websites;
 
-import com.websites.Objects;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class OK_Redis {
+public class OK_Redis2 {
     public   void redis() throws InterruptedException {
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
@@ -24,12 +23,14 @@ public class OK_Redis {
         driver.get("https://app.redislabs.com/?_gl=1*1vejvx6*_ga*MTQ4OTc5MjYuMTY2OTk2Mjc3Mg..*_ga_8BKGRQKRPV*MTY3MDUwNjIwNC4zLjAuMTY3MDUwNjIwNC4wLjAuMA..#/login");
         driver.manage().window().maximize();
         Thread.sleep(1000);
-        driver.findElement(By.id("textfield--email")).sendKeys(Objects.eMail);
-        Thread.sleep(1000);
+        driver.findElement(By.id("textfield--email")).sendKeys(Objects2.eMail);
+        Thread.sleep(2000);
         //driver.findElement(By.xpath("//input[@data-test-id='login-username']")).click();
-        driver.findElement(By.name("password")).sendKeys(Objects.password);
-        Thread.sleep(1000);
+        driver.findElement(By.name("password")).sendKeys(Objects2.password);
+        Thread.sleep(2000);
         driver.findElement(By.xpath("//button[@data-testid='button--submit']")).click();
+
+        driver.close();
 
 
 

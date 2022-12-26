@@ -41,7 +41,7 @@ public class OK_Kaspersky2 {
 
 
 
-
+        driver.close();
 
 
 

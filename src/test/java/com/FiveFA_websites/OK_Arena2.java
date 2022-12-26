@@ -35,7 +35,7 @@ public class OK_Arena2 {
         //login butonuna tıkla
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 
-
+        driver.close();
 
     }
 }

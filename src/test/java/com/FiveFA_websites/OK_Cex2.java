@@ -22,6 +22,6 @@ public class OK_Cex2 {
         driver.findElement(By.id("password")).sendKeys(Objects2.password);
         driver.findElement(By.id("login_start")).click();
 
-
+        driver.close();
     }
 }

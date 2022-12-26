@@ -15,7 +15,7 @@ public class OK_YouHolder2 {
         driver.findElement(By.xpath("//div[@data-testid='SIGN_IN_BUTTON']")).click();
 
 
-
+        driver.close();
 
 
 

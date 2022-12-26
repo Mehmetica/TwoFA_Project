@@ -40,7 +40,7 @@ public class OK_Monday2 {
             e.printStackTrace();
 
         }
-
+        driver.close();
 
     }
 }

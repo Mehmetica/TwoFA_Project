@@ -17,30 +17,38 @@ public class AnaSinif2 {
         OK_Monday2 monday = new OK_Monday2();
         OK_PCloud2 pCloud = new OK_PCloud2();
         OK_YouHolder2 youHolder = new OK_YouHolder2();
-        OK_Redis redis = new OK_Redis();
+        OK_Redis2 redis = new OK_Redis2();
         Half_Mongo mongo = new Half_Mongo();
         Half_Gate2 Half_Gate2 = new Half_Gate2();
         OK_Unity unity = new OK_Unity();
 
 
         for (int i = 0; i < 5; i++) {
-            redis.redis();
-            dropBox.dropbox();
-            youHolder.youholder();
-            kaspersky.kaspersky();
-            monday.monday();
-            pCloud.pcloud();
-            elastic.elastic();
-            cex.cex();
-            bitly.bitly();
-            arena.arena();
-            expo.expo();
-            gocardless.gocardless();
-            unity.unity();
+            try {
+                redis.redis();
+                dropBox.dropbox();
+                youHolder.youholder();
+                kaspersky.kaspersky();
+                monday.monday();
+                pCloud.pcloud();
+                elastic.elastic();
+                cex.cex();
+                bitly.bitly();
+                arena.arena();
+                expo.expo();
+                gocardless.gocardless();
+                unity.unity();
+            } catch (InterruptedException e) {
+                System.out.println(e.getMessage());
+            }
         }
 
         for (int i = 0; i < 2; i++) {
-            new AnaSinif1().anaSinif1();
+            try {
+                new AnaSinif1().anaSinif1();
+            } catch (InterruptedException e) {
+                System.out.println(e.getMessage());
+            }
         }
 
         coinbase.coinbase();//sık sık hata veriyor.yavaş site

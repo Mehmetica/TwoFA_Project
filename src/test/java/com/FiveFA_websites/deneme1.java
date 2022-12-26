@@ -9,10 +9,10 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
-public class deneme2 {
+public class deneme1 {
 
     public static void main(String[] args) throws InterruptedException {
-         new deneme2().deneme();
+         new deneme1().deneme();
 
     } public void deneme() throws InterruptedException{
         WebDriverManager.chromedriver().setup();

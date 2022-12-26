@@ -32,7 +32,7 @@ public class OK_DropBox2 {
                 "items--center dwg-justify-content--center']")).click();
 
 
-
+        driver.close();
 
     }
 }

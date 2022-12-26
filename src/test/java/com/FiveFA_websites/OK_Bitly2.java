@@ -34,6 +34,6 @@ public class OK_Bitly2 {
         driver.findElement(By.xpath("//input[@type='submit' and @tabindex='5']")).click();
 
 
-
+        driver.close();
     }
 }

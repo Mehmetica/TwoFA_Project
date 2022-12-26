@@ -41,7 +41,7 @@ public class OK_Gocardless2 {
 
 
 
-
+        driver.close();
 
 
 
