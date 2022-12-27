@@ -4,7 +4,7 @@ import com.websites.AnaSinif1;
 
 public class AnaSinif2 {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) throws RuntimeException, InterruptedException {
         OK_Arena2 arena = new OK_Arena2();
         OK_Bitly2 bitly = new OK_Bitly2();
         OK_Cex2 cex = new OK_Cex2();
@@ -24,23 +24,47 @@ public class AnaSinif2 {
 
 
         for (int i = 0; i < 5; i++) {
-            try {
-                redis.redis();
-                dropBox.dropbox();
-                youHolder.youholder();
-                kaspersky.kaspersky();
-                monday.monday();
-                pCloud.pcloud();
-                elastic.elastic();
-                cex.cex();
-                bitly.bitly();
-                arena.arena();
-                expo.expo();
-                gocardless.gocardless();
-                unity.unity();
-            } catch (InterruptedException e) {
-                System.out.println(e.getMessage());
-            }
+
+            redis.redis();
+            AnaSinif2.sleep(1);
+
+            dropBox.dropbox();
+            AnaSinif2.sleep(1);
+
+            youHolder.youholder();
+            AnaSinif2.sleep(1);
+
+            kaspersky.kaspersky();
+            AnaSinif2.sleep(1);
+
+            monday.monday();
+            AnaSinif2.sleep(1);
+
+            pCloud.pcloud();
+            AnaSinif2.sleep(1);
+
+            elastic.elastic();
+            AnaSinif2.sleep(1);
+
+            cex.cex();
+            AnaSinif2.sleep(1);
+
+            bitly.bitly();
+            AnaSinif2.sleep(1);
+
+            arena.arena();
+            AnaSinif2.sleep(1);
+
+            expo.expo();
+            AnaSinif2.sleep(1);
+
+            gocardless.gocardless();
+            AnaSinif2.sleep(1);
+
+            unity.unity();
+            AnaSinif2.sleep(1);
+
+
         }
 
         for (int i = 0; i < 2; i++) {
@@ -56,5 +80,13 @@ public class AnaSinif2 {
         mongo.mongo();//send e basmıyor
 
 
+    }
+
+    public static void sleep(long seconds) {
+        try {
+            Thread.sleep((long) (seconds * 1000));
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
